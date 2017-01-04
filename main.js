@@ -15,11 +15,7 @@ https.get(options, function(res) {
   res.on('end', function() {
     var list = JSON.parse(json);
 
-    console.log(list.data.children[0]);
-
-    var searchQuery = list.data.children[0].data.title;
-
-    console.log(searchQuery);
+    var searchQuery = encodeURIComponent(list.data.children[2].data.title);
 
     var spotifyOptions = {
       hostname: 'api.spotify.com',
