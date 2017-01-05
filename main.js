@@ -4,11 +4,11 @@ function cleanRedditTitle(title) {
   return title.replace(/\[.*\]|\(.*\)/g, '');
 }
 
-function getRedditWeeklyPosts(callback) {
+function getTracklist(callback) {
 
   const options = {
     hostname: 'www.reddit.com',
-    path: '/r/listentothis/top.json?sort=top&t=week&limit=25'
+    path: '/r/listentothis/top.json?sort=top&t=week&limit=100'
   };
 
   https.get(options, function(res) {
@@ -28,7 +28,7 @@ function getRedditWeeklyPosts(callback) {
       list.data.children.forEach(function(post, index){
 
         if (!post.is_self) {
-          searchSpotifyTrack(encodeURIComponent(cleanRedditTitle(post.data.title) ,function(searchResult){
+          searchSpotifyTrack(encodeURIComponent(cleanRedditTitle(post.data.title)) ,function(searchResult){
             length++;
 
             if (searchResult.tracks.total && searchResult.tracks.total < 15) {
@@ -68,6 +68,8 @@ function searchSpotifyTrack(query, callback) {
   });
 }
 
-getRedditWeeklyPosts(function(songs){
-  console.log(songs.filter(Boolean), songs.length);
+getTracklist(function(songs){
+  songs = songs.filter(Boolean);
+  songs.length = 25;
+  console.log(songs, songs.length);
 });
