@@ -5,6 +5,10 @@ var options = {
   path: '/r/listentothis/top.json?sort=top&t=week'
 };
 
+function cleanRedditTitle(title) {
+  return title.replace(/\[.*\]|\(.*\)/g, '');
+}
+
 https.get(options, function(res) {
   var json = '';
 
@@ -15,7 +19,7 @@ https.get(options, function(res) {
   res.on('end', function() {
     var list = JSON.parse(json);
 
-    var searchQuery = encodeURIComponent(list.data.children[2].data.title);
+    var searchQuery = encodeURIComponent(cleanRedditTitle(list.data.children[2].data.title));
 
     var spotifyOptions = {
       hostname: 'api.spotify.com',

@@ -4,6 +4,9 @@
 
 automaticly creates a Sotify Playlist from the posting of the r/listentothis subreddit
 
+## Starting the app ##
+
+run `node main.js` to start the app
 
 ## TODOS ##
 
