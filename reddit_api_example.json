@@ -1,0 +1,133 @@
+{
+    "kind": "Listing",
+    "data": {
+        "modhash": "5ama76rb265331d951f84014501257dfde69e69f556a9ccb2f",
+        "children": [{
+            "kind": "t3",
+            "data": {
+                "contest_mode": false,
+                "banned_by": null,
+                "domain": "youtube.com",
+                "subreddit": "listentothis",
+                "selftext_html": null,
+                "selftext": "",
+                "likes": null,
+                "suggested_sort": null,
+                "user_reports": [],
+                "secure_media": {
+                    "type": "youtube.com",
+                    "oembed": {
+                        "provider_url": "https://www.youtube.com/",
+                        "version": "1.0",
+                        "title": "Mashup: The Weeknd - Starboy x Survive - Stranger Things Theme (C418 Remix) - Stranger Boy",
+                        "type": "video",
+                        "thumbnail_width": 480,
+                        "height": 338,
+                        "width": 600,
+                        "html": "&lt;iframe width=\"600\" height=\"338\" src=\"https://www.youtube.com/embed/zD0M7rVDG6g?feature=oembed\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+                        "author_name": "flipboitamidle5",
+                        "provider_name": "YouTube",
+                        "thumbnail_url": "https://i.ytimg.com/vi/zD0M7rVDG6g/hqdefault.jpg",
+                        "thumbnail_height": 360,
+                        "author_url": "https://www.youtube.com/channel/UCXBVoU7GGl-WQdQwlABseWw"
+                    }
+                },
+                "saved": false,
+                "id": "5lthm7",
+                "gilded": 0,
+                "secure_media_embed": {
+                    "content": "&lt;iframe width=\"600\" height=\"338\" src=\"https://www.youtube.com/embed/zD0M7rVDG6g?feature=oembed\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+                    "width": 600,
+                    "scrolling": false,
+                    "height": 338
+                },
+                "clicked": false,
+                "report_reasons": null,
+                "author": "DaedalusMinion",
+                "media": {
+                    "type": "youtube.com",
+                    "oembed": {
+                        "provider_url": "https://www.youtube.com/",
+                        "version": "1.0",
+                        "title": "Mashup: The Weeknd - Starboy x Survive - Stranger Things Theme (C418 Remix) - Stranger Boy",
+                        "type": "video",
+                        "thumbnail_width": 480,
+                        "height": 338,
+                        "width": 600,
+                        "html": "&lt;iframe width=\"600\" height=\"338\" src=\"https://www.youtube.com/embed/zD0M7rVDG6g?feature=oembed\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+                        "author_name": "flipboitamidle5",
+                        "provider_name": "YouTube",
+                        "thumbnail_url": "https://i.ytimg.com/vi/zD0M7rVDG6g/hqdefault.jpg",
+                        "thumbnail_height": 360,
+                        "author_url": "https://www.youtube.com/channel/UCXBVoU7GGl-WQdQwlABseWw"
+                    }
+                },
+                "name": "t3_5lthm7",
+                "score": 7978,
+                "approved_by": null,
+                "over_18": false,
+                "removal_reason": null,
+                "hidden": false,
+                "preview": {
+                    "images": [{
+                        "source": {
+                            "url": "https://i.redditmedia.com/jkuPE3Ds-O7vl8jT5lePfJid0qVUg_57C1t_Kocax3I.jpg?s=4b0ce4527ccfb7b3b6905c439fe0c915",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "resolutions": [{
+                            "url": "https://i.redditmedia.com/jkuPE3Ds-O7vl8jT5lePfJid0qVUg_57C1t_Kocax3I.jpg?fit=crop&amp;crop=faces%2Centropy&amp;arh=2&amp;w=108&amp;s=d292a22b286dfd300346d364c04ac7df",
+                            "width": 108,
+                            "height": 81
+                        }, {
+                            "url": "https://i.redditmedia.com/jkuPE3Ds-O7vl8jT5lePfJid0qVUg_57C1t_Kocax3I.jpg?fit=crop&amp;crop=faces%2Centropy&amp;arh=2&amp;w=216&amp;s=619158686edbaf88ecb99b887b30ab5a",
+                            "width": 216,
+                            "height": 162
+                        }, {
+                            "url": "https://i.redditmedia.com/jkuPE3Ds-O7vl8jT5lePfJid0qVUg_57C1t_Kocax3I.jpg?fit=crop&amp;crop=faces%2Centropy&amp;arh=2&amp;w=320&amp;s=df0671058bb6eac49ab6ede264bb243f",
+                            "width": 320,
+                            "height": 240
+                        }],
+                        "variants": {},
+                        "id": "IQOyrYbSlcqF6tzGZSzgvblXx9m8bJWUJQISGqT_2Ss"
+                    }]
+                },
+                "thumbnail": "http://b.thumbs.redditmedia.com/g12oE1y9ePejN8bVtnyywBTnXwkIdGPxKj7ANxSJNkw.jpg",
+                "subreddit_id": "t5_2qxzy",
+                "edited": false,
+                "link_flair_css_class": null,
+                "author_flair_css_class": "lastfm",
+                "downs": 0,
+                "mod_reports": [],
+                "archived": false,
+                "media_embed": {
+                    "content": "&lt;iframe width=\"600\" height=\"338\" src=\"https://www.youtube.com/embed/zD0M7rVDG6g?feature=oembed\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+                    "width": 600,
+                    "scrolling": false,
+                    "height": 338
+                },
+                "post_hint": "rich:video",
+                "is_self": false,
+                "hide_score": false,
+                "spoiler": false,
+                "permalink": "/r/listentothis/comments/5lthm7/c418_the_weeknd_starboy_x_survive_stranger_things/",
+                "locked": false,
+                "stickied": false,
+                "created": 1483496533.0,
+                "url": "https://www.youtube.com/watch?v=zD0M7rVDG6g",
+                "author_flair_text": "DaedalusMinion",
+                "quarantine": false,
+                "title": "C418 -- The Weeknd - Starboy x Survive - Stranger Things Theme [Pop] (2016)",
+                "created_utc": 1483467733.0,
+                "link_flair_text": null,
+                "distinguished": null,
+                "num_comments": 411,
+                "visited": false,
+                "num_reports": null,
+                "ups": 7978
+            }
+        }],
+        "after": "t3_5lthm7",
+        "before": null
+    }
+}
