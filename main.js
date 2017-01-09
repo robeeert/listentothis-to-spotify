@@ -1,4 +1,5 @@
 const https = require('https');
+const fs = require('fs');
 
 function cleanRedditTitle(title) {
   return title.replace(/\[.*\]|\(.*\)/g, '');
@@ -20,7 +21,13 @@ function getTracklist(callback) {
 
     res.on('end', function() {
       const list = JSON.parse(json);
-
+      // fs.writeFile("wk1.json", json, function(err) {
+      //      if(err) {
+      //          return console.log(err);
+      //      }
+      //
+      //      console.log("The file was saved!");
+      //  });
       let songs = [];
 
       let length = 0;
