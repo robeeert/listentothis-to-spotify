@@ -1,12 +1,11 @@
-var config = {
-  credentials : {
-    reddit : {
-      username: '',
-      password: ''
-    },
-    spotify: {
-      username: '',
-      password: ''
-    }
+const config = {
+  spotify: {
+    username: '',
+    playlistId: '',
+    clientId: '',
+    clientSecret: '',
+    accessToken: ''
   }
 }
+
+module.exports = config;

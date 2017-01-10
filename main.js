@@ -1,5 +1,15 @@
 const https = require('https');
 const fs = require('fs');
+const spotifyWebApi = require('spotify-web-api-node');
+const config = require('./config');
+
+let spotifyApi = new spotifyWebApi({
+  clientId : config.spotify.clientId,
+  clientSecret : config.spotify.clientSecret,
+  redirectUri : 'http://localhost:8888/callback'
+});
+
+spotifyApi.setAccessToken(config.spotify.accessToken);
 
 function cleanRedditTitle(title) {
   return title.replace(/\[.*\]|\(.*\)/g, '');
@@ -20,7 +30,8 @@ function getTracklist(callback) {
     });
 
     res.on('end', function() {
-      const list = JSON.parse(json);
+      // const list = JSON.parse(json);
+
       // fs.writeFile("wk1.json", json, function(err) {
       //      if(err) {
       //          return console.log(err);
@@ -28,6 +39,8 @@ function getTracklist(callback) {
       //
       //      console.log("The file was saved!");
       //  });
+      const list = JSON.parse(fs.readFileSync('wk1.json', 'utf-8'));
+
       let songs = [];
 
       let length = 0;
@@ -39,7 +52,7 @@ function getTracklist(callback) {
             length++;
 
             if (searchResult.tracks.total && searchResult.tracks.total < 15) {
-              songs[index] = searchResult.tracks.items[0].id;
+              songs[index] = 'spotify:track:' + searchResult.tracks.items[0].id;
             }
 
             if (list.data.children.length === length) {
@@ -78,5 +91,10 @@ function searchSpotifyTrack(query, callback) {
 getTracklist(function(songs){
   songs = songs.filter(Boolean);
   songs.length = 25;
-  console.log(songs, songs.length);
+  spotifyApi.addTracksToPlaylist(config.spotify.username, config.spotify.playlistId, songs)
+  .then(function(data) {
+    console.log('Added tracks to playlist!');
+  }, function(err) {
+    console.log('Something went wrong!', err);
+  });
 });

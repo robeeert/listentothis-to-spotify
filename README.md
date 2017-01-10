@@ -14,7 +14,10 @@ run `node main.js` to start the app
 * ~~clean up title~~
 * ~~search spotify for tracks~~
 * ~~get more posts from reddit if a defined # of tracks isn't found~~
-* Oauth spotify -> http://stackoverflow.com/questions/31281390/spotify-api-authorization-for-cron-job?rq=1
+* ~~Oauth spotify -> http://stackoverflow.com/questions/31281390/spotify-api-authorization-for-cron-job?rq=1 ~~
+* ~~create main playlist~~
 * create playlist with songs for the week (weekly r/listentothis weekW 2016)
 * update weekly changing playlist
+* create cron
 * log posts that hasn't been found on reddit
+* package.json
