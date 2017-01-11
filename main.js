@@ -91,10 +91,18 @@ function searchSpotifyTrack(query, callback) {
 getTracklist(function(songs){
   songs = songs.filter(Boolean);
   songs.length = 25;
-  spotifyApi.addTracksToPlaylist(config.spotify.username, config.spotify.playlistId, songs)
-  .then(function(data) {
-    console.log('Added tracks to playlist!');
-  }, function(err) {
-    console.log('Something went wrong!', err);
-  });
+  setTimeout(function(){
+    // spotifyApi.createPlaylist(config.spotify.username, 'weekly r/listentothis 2017 week #1', { 'public' : true })
+    // .then(function(json) {
+    //   spotifyApi.addTracksToPlaylist(config.spotify.username, json.body.id, songs)
+    //   .then(function(data) {
+    //     console.log('Added tracks to playlist!');
+    //   }, function(err) {
+    //     console.log('Something went wrong!', err);
+    //   })
+    //   console.log('Created playlist!');
+    // }, function(err) {
+    //   console.log('Something went wrong!', err);
+    // });
+  },10000);
 });

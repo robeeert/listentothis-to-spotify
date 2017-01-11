@@ -1,7 +1,10 @@
 const config = {
   spotify: {
     username: '',
-    playlistId: '',
+    playlistIds: {
+      listentothis: '',
+      music: ''
+    },
     clientId: '',
     clientSecret: '',
     accessToken: ''
