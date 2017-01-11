@@ -2,7 +2,7 @@
 
 ***this is work in progress***
 
-automaticly creates a Sotify Playlist from the posting of the r/listentothis subreddit
+automatically creates a weekly spotify playlist from the postings of the r/listentothis subreddit
 
 ## Starting the app ##
 
