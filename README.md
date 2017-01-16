@@ -16,6 +16,7 @@ run `node main.js` to start the app
 * ~~get more posts from reddit if a defined # of tracks isn't found~~
 * ~~Oauth spotify -> [stackoverflow](http://stackoverflow.com/questions/31281390/spotify-api-authorization-for-cron-job?rq=1)~~
 * ~~create main playlist~~
+* ~~reoptain token~~
 * hosting
 * create cron
 * refactor
